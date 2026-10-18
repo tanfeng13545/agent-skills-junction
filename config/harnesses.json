@@ -1,0 +1,55 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Skills Junction Configuration",
+  "ssot": "~/.agents/skills",
+  "targets": [
+    {
+      "name": "Pi / ThinkRail",
+      "path_windows": "~/.pi/agent/skills",
+      "path_posix": "~/.pi/agent/skills",
+      "enabled": true
+    },
+    {
+      "name": "Codex CLI",
+      "path_windows": "~/.codex/skills",
+      "path_posix": "~/.codex/skills",
+      "enabled": true
+    },
+    {
+      "name": "Gemini Config / Antigravity",
+      "path_windows": "~/.gemini/config/skills",
+      "path_posix": "~/.gemini/config/skills",
+      "enabled": true
+    },
+    {
+      "name": "Gemini Antigravity CLI",
+      "path_windows": "~/.gemini/antigravity-cli/skills",
+      "path_posix": "~/.gemini/antigravity-cli/skills",
+      "enabled": true
+    },
+    {
+      "name": "Claude Desktop / Claude Code",
+      "path_windows": "~/.claude/skills",
+      "path_posix": "~/.claude/skills",
+      "enabled": true
+    },
+    {
+      "name": "Continue.dev",
+      "path_windows": "~/.continue/skills",
+      "path_posix": "~/.continue/skills",
+      "enabled": true
+    },
+    {
+      "name": "OpenHands",
+      "path_windows": "~/.openhands/skills",
+      "path_posix": "~/.openhands/skills",
+      "enabled": true
+    },
+    {
+      "name": "Cursor Agent",
+      "path_windows": "~/.cursor/skills",
+      "path_posix": "~/.cursor/skills",
+      "enabled": true
+    }
+  ]
+}

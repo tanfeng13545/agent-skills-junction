@@ -1,0 +1,12 @@
+﻿# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup folders
+*.bak*
+*.tmp
+
+# Local testing
+local-tests/
+logs/
