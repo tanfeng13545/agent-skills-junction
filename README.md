@@ -120,9 +120,16 @@ Just ask your current AI assistant:
 > *"Help me install this skill from GitHub: https://github.com/op7418/guizang-social-card-skill"*
 
 ### Scenario B: Create a Custom Skill
-> *"Create a new skill for summarizing code review changes according to our team standards."*
+> 🗣️ *"Create a new skill for summarizing code review changes according to our team standards."*
 
 The AI will write it, the OS will direct it into `~/.agents/skills`, and you can immediately switch to any other Agent harness and use it right away.
+
+### Scenario C: Cleanly Uninstall/Remove a Skill (Zero "Zombie Rebirth")
+> 🗣️ *"Uninstall and remove the `test-dummy-skill` skill for me."*
+
+* **The Nightmare of File-Copy Syncing**: Deleting a skill in Client A causes the background sync daemon to treat Client B as the newer source, copying the deleted skill right back into Client A in an endless "zombie file loop".
+* **Our Native Junction Solution**: Because there is strictly one physical instance, deletion by any Agent cleanly eliminates it from the central store. **Every peer Agent sees it vanish in 0ms**.
+* **Safety Net for Accidental Deletion**: If an Agent accidentally deletes an important custom skill, Git versioning on `~/.agents/skills` lets you restore it in seconds: `git checkout -- <skill-name>`.
 
 ---
 
